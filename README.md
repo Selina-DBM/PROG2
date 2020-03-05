@@ -8,3 +8,4 @@ Auswahl: Hosen, T-Shirts, Kleider etc.
 
 Dem Kunden werden dann nur noch Kleidungsstücke angezeigt, die der Filterung entsprechen und dem Kunden grundsätzlich passen könnten. Der Kunde kann sich dann die Kleidungsstücke aussuchen und in den Warenkorb legen. Anschliessend berechnet die Website die Versandkosten. 
 
+(https://github.com/Selina-DBM/PROG2/blob/master/Ablauf%20Diagramm.jpg "Diagram Website")
