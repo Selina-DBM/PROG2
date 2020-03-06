@@ -1,21 +1,25 @@
-body {
-    background-size: cover;
-    background-color: gainsboro;
-    margin: 0;
-    padding: 0;
+.Hintergrund {
+    background-image: url(Background.jpg);
+    width: 100%;
+    height: 40%;
 }
 
-.Begruessungs-text {
-    font-size: 50px;
-    margin-left: 28%;
-    margin-top: 310;
+.Begruessungstext {
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size: 20pt;
     font-family: 'Spartan';
-    text-shadow: 5px 10px 8px;
 }
+
 
 .Kleiderabfrage {
-    font-size: 40px;
-    margin-left: 28%;
+    font-size: 40pt;
+    margin-left: 2%;
     margin-top: 100;
     font-family: 'Spartan';
+}
+.Abfrageeins {
+    margin-top: 20pt;
+    margin-left: 20pt;
+
 }
