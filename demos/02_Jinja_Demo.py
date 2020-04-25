@@ -14,13 +14,13 @@ def hallo():
 
 
 
-@app.route('/seiteeins')
+@app.route('/seiteeins/')
 def seiteeins():
     return render_template("seite1.html")
 
 
 
-@app.route('/seitezwei')
+@app.route('/seitezwei/')
 def seitezwei():
     return render_template("seite2.html")
 
