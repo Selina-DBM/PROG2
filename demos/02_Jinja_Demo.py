@@ -24,5 +24,26 @@ def seiteeins():
 def seitezwei():
     return render_template("seite2.html")
 
+
+
+@app.route('/seitedrei/')
+def seitedrei():
+    return render_template("seite3.html")
+
+
+@app.route('/seitevier/')
+def seitevier():
+    return render_template("seite4.html")
+
+@app.route('/seitefuenf/')
+def seitefuenf():
+    return render_template("seite5.html")
+
+
+@app.route('/seitesechs/')
+def seitesechs():
+    return render_template("seite6.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)

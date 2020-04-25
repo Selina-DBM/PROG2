@@ -8,7 +8,7 @@
 }
 
 .Kleiderabfrage {
-    font-size: 40pt;
+    font-size: 20pt;
     margin-left: 2%;
     margin-top: 100;
     font-family: 'Spartan';
@@ -16,5 +16,21 @@
 .Abfrageeins {
     margin-top: 20pt;
     margin-left: 20pt;
+    font-family: 'Spartan'
+
+}
+h1 {
+    font-family: 'Spartan'
+}
+h3 {
+    font-family: 'Spartan'
+}
+
+.Titel {
+    font-size: 20pt;
+    font-family: 'Spartan';
+}
+
+.Warenkorb {
 
 }
