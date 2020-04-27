@@ -1,5 +1,4 @@
 
-
 .Begruessungstext {
     margin-top: 20%;
     margin-left: 40%;
@@ -9,6 +8,7 @@
 
 .Kleiderabfrage {
     font-size: 20pt;
+    margin-top: 2%;
     margin-left: 2%;
     font-family: 'Spartan';
 }
@@ -18,30 +18,30 @@
     font-family: 'Spartan'
 
 }
-h1 {
-    font-family: 'Spartan'
-    font-size: 20pt;
-}
-h3 {
-    font-family: 'Spartan'
-    font-size: 20pt;
-}
-
 .Titel {
     font-size: 20pt;
+    margin-left: 2%;
     font-family: 'Spartan';
 }
 
 .Volleadresse {
-    font-family: 'Spartan'
+    margin-left: 2%;
+    font-family: 'Spartan';
+    font-size: 10pt;
 }
 .text {
-    margin-top: 20%;
-    margin-left: 40%;
     font-size: 20pt;
     font-family: 'Spartan';
+    margin-top: 20pt;
+    margin-left: 2%;
 }
 
 .Tabelle {
-    font-family: 'Spartan'
+    font-family: 'Spartan';
+    margin-left: 2%;
+}
+
+.Warenkorb{
+    font-family: 'Spartan';
+    margin-left: 2%;
 }
