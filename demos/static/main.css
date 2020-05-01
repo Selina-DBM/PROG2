@@ -5,7 +5,6 @@
     font-size: 20pt;
     font-family: 'Spartan';
 }
-
 .Kleiderabfrage {
     font-size: 20pt;
     margin-top: 2%;
@@ -24,7 +23,6 @@
     font-family: 'Spartan';
     width: 300pt;
     text-align: center;
-
 }
 .Titel {
     font-size: 20pt;
@@ -34,7 +32,6 @@
     width: 300pt;
     text-align: center;
 }
-
 .Volleadresse {
     margin-left: 35%;
     font-family: 'Spartan';
@@ -48,16 +45,16 @@
     width: 300pt;
     text-align: center;
 }
-
-.Warenkorb{
-    font-family: 'Spartan';
+.entscheidung {
     margin-left: 35%;
     width: 300pt;
     text-align: center;
 }
-
 .auswahl {
-    margin-left: 35%;
-    width: 300pt;
-    text-align: center;
+    margin-left: 43%;
+    width: 200px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    font-family: 'Spartan';
 }
