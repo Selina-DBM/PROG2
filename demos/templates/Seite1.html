@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>About myself - Selina Marty</title>
+    <title>Seite1</title>
     <meta charset="utf-8">
     <meta name="author" content="Selina Marty">
     <meta name="description" content="Begrüssungs-Seite">
@@ -12,8 +12,6 @@
     <!-- Browser: Google Chrome -->
 
     <link rel="stylesheet" href="../static/main.css" type="text/css"/>
-
-
 </head>
 
 
@@ -25,56 +23,69 @@
     </div>
     <br><br>
 
-
     <div class="Tabelle">
-<table border="1">
-  <tr>
-    <td>
-       
-    </td>
-    <td>
-       Hosen
-    </td>
-    <td>
-      Jacken
-    </td>
-    <td>T-Shirts</td>
-  </tr>
-    <tr>
-    <td> S</td>
-    <td>
-        <form method="POST">
-            <input type="checkbox" name="Kleidungsstücke" size="50"></td>
-    <td><form method="POST">
-            <input type="checkbox" name="Kleidungsstücke" size="50"></td>
-    <td><form method="POST">
-            <input type="checkbox" name="Kleidungsstücke" size="50"></td>
-  </tr>
-  <tr>
-    <td>M </td>
-    <td><form method="POST">
-            <input type="checkbox" name="Kleidungsstücke" size="50"></td>
-    <td><form method="POST">
-            <input type="checkbox" name="Kleidungsstücke" size="50"></td>
-    <td> <form method="POST">
-            <input type="checkbox" name="Kleidungsstücke" size="50"></td>
-  </tr>
-  <tr>
-    <td>L</td>
-    <td><form method="POST">
-            <input type="checkbox" name="Kleidungsstücke" size="50"></td>
-    <td><form method="POST">
-            <input type="checkbox" name="Kleidungsstücke" size="50"></td>
-    <td><form method="POST">
-            <input type="checkbox" name="Kleidungsstücke" size="50"></td>
-  </tr>
-  
-</table>
-</div>
-        </div>
-
-
-
+        <table border="1">
+            <tr>
+                <td></td>
+                <th>
+                    Hosen
+                </th>
+                <th>
+                    Jacken
+                </th>
+                <th>
+                    T-Shirts
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    S
+                </th>
+                <td>
+                    <input type="checkbox" name="hose_s" size="50">
+                </td>
+                <td>
+                    <input type="checkbox" name="jacken_s" size="50">
+                </td>
+                <td>
+                    <input type="checkbox" name="tshirts_s" size="50">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    M
+                </th>
+                <td>
+                    <input type="checkbox" name="hose_m" size="50">
+                </td>
+                <td>
+                    <input type="checkbox" name="jacken_m" size="50">
+                </td>
+                <td>
+                    <input type="checkbox" name="tshirts_m" size="50">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    L
+                </th>
+                <td>
+                    <input type="checkbox" name="hose_l" size="50">
+                </td>
+                <td>
+                    <input type="checkbox" name="jacken_l" size="50">
+                </td>
+                <td>
+                    <input type="checkbox" name="tshirts_l" size="50">
+                </td>
+            </tr>
+        
+    </div>
+    <div>
+            <form method="POST">
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 
 .Begruessungstext {
     margin-top: 20%;
-    margin-left: 40%;
+    margin-left: 35%;
     font-size: 20pt;
     font-family: 'Spartan';
 }
@@ -9,23 +9,34 @@
 .Kleiderabfrage {
     font-size: 20pt;
     margin-top: 2%;
-    margin-left: 2%;
+    margin-left: 35%;
     font-family: 'Spartan';
+    width: 300pt;
+    text-align: center;
+}
+.Tabelle {
+    font-family: 'Spartan';
+    margin-left: 40%;
 }
 .Abfrageeins {
     margin-top: 20pt;
-    margin-left: 20pt;
-    font-family: 'Spartan'
+    margin-left: 35%;
+    font-family: 'Spartan';
+    width: 300pt;
+    text-align: center;
 
 }
 .Titel {
     font-size: 20pt;
-    margin-left: 2%;
+    margin-top: 20pt;
+    margin-left: 35%;
     font-family: 'Spartan';
+    width: 300pt;
+    text-align: center;
 }
 
 .Volleadresse {
-    margin-left: 2%;
+    margin-left: 35%;
     font-family: 'Spartan';
     font-size: 10pt;
 }
@@ -33,15 +44,20 @@
     font-size: 20pt;
     font-family: 'Spartan';
     margin-top: 20pt;
-    margin-left: 2%;
-}
-
-.Tabelle {
-    font-family: 'Spartan';
-    margin-left: 2%;
+    margin-left: 35%;
+    width: 300pt;
+    text-align: center;
 }
 
 .Warenkorb{
     font-family: 'Spartan';
-    margin-left: 2%;
+    margin-left: 35%;
+    width: 300pt;
+    text-align: center;
+}
+
+.auswahl {
+    margin-left: 35%;
+    width: 300pt;
+    text-align: center;
 }

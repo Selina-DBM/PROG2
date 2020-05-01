@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>About myself - Selina Marty</title>
+    <title>Seite5</title>
     <meta charset="utf-8">
     <meta name="author" content="Selina Marty">
     <meta name="description" content="Begrüssungs-Seite">
@@ -16,33 +16,52 @@
 
 </head>
 
-
 <body >
     <div class= "text">
-        Du hast folgende Kleidungsstücke in deinen Warenkorb gelegt. <br>
-        Bitte trage deine Adresse ein:
-        </div>
+        Bitte trage deine Adresse und E-Mail Adresse ein:
+    </div>
+        <br>
 
-        <div class="Volleadresse">
-                Name Vorname <br>
-            <form method="POST">
-                <input type="text" name="name_vorname" size="50">
+    <div class="Volleadresse">
+        <form>
+            <label>E-Mail: 
+                <br>
+                <input type="email" name="email" size="50">
+            </label>
+        </form>
                 
-            </form>
-            <form method="POST">
-                Strasse und Hausnummer <br>
+        <form method="POST">
+            <label>Name und Vorname
+                <br>
+                <input type="text" name="name_vorname" size="50">
+            </label>
+        </form>
+
+        <form method="POST">
+            <label>Strasse und Hausnummer
+                <br>
                 <input type="text" name="adresse" size="50">
-            </form>
-            <form method="POST">
-                Wohnort und PLZ <br>
+            </label>
+        </form>
+
+        <form method="POST">
+            <label>Wohnort und PLZ
+                <br>
                 <input type="text" name="wohnort" size="50">
-            </form>
-            <form method="POST">
-                Land <br>
-                <input type="checkbox" name="Land" size="50">
-                <button type="submit">Send</button>
-            </form>
-        </div>
+            </label>
+        </form>
+
+        <form method="POST">
+            <label>Schweiz
+                <input type="checkbox" name="schweiz" size="50">
+            </label>
+            <label>Deutschland
+                <input type="checkbox" name="deutschland" size="50">
+            </label>
+            <br><br>
+            <button type="submit">Send</button
+        </form>
+    </div>
     
 
 </body>
