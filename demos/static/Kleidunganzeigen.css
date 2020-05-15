@@ -1,73 +1,38 @@
-
-.Begruessungstext {
-    margin-top: 20%;
-    margin-left: 35%;
-    font-size: 20pt;
-    font-family: 'Spartan';
-}
-.Kleiderabfrage {
-    font-size: 20pt;
-    margin-top: 2%;
-    margin-left: 35%;
-    font-family: 'Spartan';
-    width: 300pt;
-    text-align: center;
-}
-.Tabelle {
-    font-family: 'Spartan';
-    margin-left: 40%;
-}
-.Abfrageeins {
-    margin-top: 20pt;
-    margin-left: 35%;
-    font-family: 'Spartan';
-    width: 300pt;
-    text-align: center;
-}
-.Titel {
-    font-size: 20pt;
-    margin-top: 20pt;
-    margin-left: 35%;
-    font-family: 'Spartan';
-    width: 300pt;
-    text-align: center;
-}
-.Volleadresse {
-    margin-left: 35%;
-    font-family: 'Spartan';
-    font-size: 10pt;
-}
-.text {
-    font-size: 20pt;
-    font-family: 'Spartan';
-    margin-top: 20pt;
-    margin-left: 35%;
-    width: 300pt;
-    text-align: center;
-}
-.entscheidung {
-    margin-left: 35%;
-    width: 300pt;
-    text-align: center;
-}
-.auswahl {
-    margin-left: 43%;
-    width: 200px;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    font-family: 'Spartan';
+.card_add {
+  border: 1px solid black;
+  max-width: 300px;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+  font-family: arial;
 }
 
-.bestaetigung {
-    margin-left: 43%;
-    width: 200px;
+.price {
+  color: grey;
+  font-size: 22px;
 }
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
 .container {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  margin-bottom: 50px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;

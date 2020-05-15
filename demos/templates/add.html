@@ -1,0 +1,36 @@
+<head>
+<title>Add to Cart</title>
+<link rel="stylesheet" href="../static/Kleidunganzeigen.css" type="text/css" /> <!-- Verweis auf CSS-Datei, href: wo liegt es?-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+
+
+
+<body>
+   <form>
+       <div class="row"> <!-- Bootstrap: Ausgabe in Zeilen -->
+        {% for key, value in articles.iterrows() %} <!-- Schleife durch articles (Zeilen, die durchlaufen werden sollen)) -->
+        <div class="col-md-4"> <!-- Festlegung der Spaltenbreite. md-12 = gesamte Breite -->
+            <div class ="card_add">
+                <img src="../static/{{value['bilder']}}" style="width:100%"/>
+                <p id="{{ value['artikelnummer'] }}">{{ value['artikel'] }} {{ value['groesse'] }}</p> <!-- 2 x }} vergessen -->
+                <p class="price" id="{{ value['artikelnummer'] }}">{{value['preis'] }} CHF </p>
+
+                <label class="container">
+                  <input type="checkbox" name="warenkorb" value="{{ value['artikelnummer'] }}" >
+                  <span class="checkmark"></span>
+              </label>
+            </div>
+        </div>
+        {% endfor %}  
+       </div>
+       
+   </form>
+
+   <div class ="Titel"> Falls die ausgewählten Kleidunsstücke nicht richtig sind, klicke auf "Neue Auswahl" 
+        <input type="button" onclick="location.href='{{url_for('.kleidungsabfrage')}}';"value="Neue Auswahl"/>
+   </div>
+</body>
+
+</html>

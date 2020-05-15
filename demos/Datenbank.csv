@@ -1,0 +1,10 @@
+,Unnamed: 0,artikelnummer,artikel,groesse,bilder,filter_values,preis
+0,0,1000,Jacke,M,1000.jpg,jacken_m,50
+1,1,1001,Jacke,L,1001.jpg,jacken_l,100
+2,2,1002,Jacke,S,1002.jpg,jacken_s,100
+3,3,1003,Hose,S,1003.jpg,hosen_s,50
+4,4,1004,Hose,M,1004.jpg,hosen_m,80
+5,5,1005,Hose,L,1005.jpg,hosen_l,50
+6,6,1006,T-Shirt,S,1006.jpg,tshirts_s,50
+7,7,1007,T-Shirt,M,1007.jpg,tshirts_m,51
+8,8,1008,T-Shirt,L,1008.jpg,tshirts_l,50

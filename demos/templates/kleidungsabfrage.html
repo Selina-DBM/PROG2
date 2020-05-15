@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Kleidungsabfrage</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Selina Marty">
+    <meta name="description" content="Begrüssungs-Seite">
+    <meta name="keywords" content="Homepage, HTML, WWW, WINF, IW">
+    <meta name="date" content="01.11.2018">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <!-- Browser: Google Chrome -->
+
+    <link rel="stylesheet" href="../static/main.css" type="text/css"/>
+
+
+</head>
+
+
+<body>
+    <div class="Kleiderabfrage">
+        Hallo {{vorname}} <br>
+        Für welche Artikel
+        interessierst du dich?<br>
+    </div>
+    <br><br>
+
+
+<div class="Tabelle">
+        <form method="POST" action="{{url_for('.add')}}">
+<table border="1"> <!-- Code sauber formatieren für Prof -->
+  <tr> <!--deinfes row /neue Zeile-->
+    <td> <!--defines cell -->
+       
+    </td>
+    <td> <!-- <th> besser für Überschriften  (https://www.w3schools.com/TAGS/tag_table.asp) -->
+       Hosen
+    </td>
+    <td>
+      Jacken
+    </td>
+    <td>T-Shirts</td>
+  </tr>
+    <tr>
+    <td>S</td>
+    <td><form method="POST">
+            <input type="checkbox" name="artikel_filter" value="hosen_s" size="50"></td> <!-- Name muss eineindeutig sein Hosen S-->
+    <td><form method="POST">
+            <input type="checkbox" name="artikel_filter" value="jacken_s" size="50"></td><!-- Jacken S- usw. -->
+    <td><form method="POST">
+            <input type="checkbox" name="artikel_filter" value="tshirts_s" size="50"></td>
+  </tr>
+  <tr>
+    <td>M</td>
+    <td><form method="POST">
+            <input type="checkbox" name="artikel_filter" value="hosen_m" size="50"></td>
+    <td><form method="POST">
+            <input type="checkbox" name="artikel_filter" value="jacken_m" size="50"></td>
+    <td> <form method="POST">
+            <input type="checkbox" name="artikel_filter" value="tshirts_m" size="50"></td>
+  </tr>
+  <tr>
+    <td>L</td>
+    <td><form method="POST">
+            <input type="checkbox" name="artikel_filter" value="hosen_l" size="50"></td>
+    <td><form method="POST">
+            <input type="checkbox" name="artikel_filter" value="jacken_l" size="50"></td>
+    <td><form method="POST">
+            <input type="checkbox" name="artikel_filter" value="tshirts_l" size="50"></td>
+  </tr>
+  
+</table>
+    <input type="submit" value="Artikel filtern" />
+        </form>
+</div>
+       
+    
+   
+</body>
+
+</html>

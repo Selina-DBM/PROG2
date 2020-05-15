@@ -1,48 +1,54 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+import pandas as pd
 
-app = Flask("Hello World")
+DATENBANK = pd.read_csv ('Datenbank.csv')
 
-@app.route("/index/", methods=['GET', 'POST'])
+app = Flask("Onlineshop")
+vorname=""
+
+@app.route("/", methods=['GET', 'POST'])
 def hallo():
     if request.method == 'POST':
+        global vorname
         vorname = request.form['vorname']
-        return render_template("seite1.html")
+        print(vorname)
+        return render_template("kleidungsabfrage.html", vorname=vorname)
+        print (applied_filters)
     return render_template('index.html')
 
 
 
-
-@app.route('/seiteeins/')
-def seiteeins():
-    return render_template("seite1.html")
-
-
-
-@app.route('/seitezwei/')
-def seitezwei():
-    return render_template("seite2.html")
+@app.route('/kleidungsabfrage/', methods=['GET', 'POST'])
+def kleidungsabfrage():
+    return render_template("kleidungsabfrage.html")
 
 
 
-@app.route('/seitedrei/')
-def seitedrei():
-    return render_template("seite3.html")
+@app.route('/add/', methods=['GET', 'POST'])
+def add():
+    if request.method == 'POST':
+        applied_filters = request.form.getlist('artikel_filter')
+        print (applied_filters)
+        filtered_articles = DATENBANK[DATENBANK.filter_values.isin(applied_filters)]
+        return render_template("add.html", articles=filtered_articles)
 
 
-@app.route('/seitevier/')
-def seitevier():
-    return render_template("seite4.html")
-
-@app.route('/seitefuenf/')
-def seitefuenf():
-    return render_template("seite5.html")
+@app.route('/bezahlseite/', methods=['GET', 'POST'])
+def bezahlseite():
+    return render_template("bezahlseite.html")
 
 
-@app.route('/seitesechs/')
-def seitesechs():
-    return render_template("seite6.html")
+
+@app.route('/warenkorb/', methods=['GET', 'POST'])
+def warenkorb():
+    return render_template("warenkorb.html")
+
+
+@app.route('/verabschiedung/', methods=['GET', 'POST'])
+def verabschiedung():
+    return render_template("verabschiedung.html")
 
 
 if __name__ == "__main__":
