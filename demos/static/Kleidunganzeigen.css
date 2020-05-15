@@ -2,6 +2,8 @@
   border: 1px solid black;
   max-width: 300px;
   margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
   padding-top: 10px;
   text-align: center;
   font-family: arial;
@@ -52,7 +54,7 @@
 .checkmark {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 130;
   height: 25px;
   width: 25px;
   background-color: #eee;
@@ -91,4 +93,12 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.Titel_add {
+    font-size: 20pt;
+    margin-top: 1000px;
+    margin-left: ; font-family: 'Spartan';
+    width: 300pt;
+    text-align: center;
 }

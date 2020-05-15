@@ -8,7 +8,14 @@
 
 
 <body>
-   <form>
+   <div class ="Titel_add"> Falls die ausgewählten Kleidunsstücke nicht richtig sind, klicke auf "Neue Auswahl" 
+        <input type="button" onclick="location.href='{{url_for('.kleidungsabfrage')}}';"value="Neue Auswahl"/>
+   </div>
+   
+   <div class ="Titel_add"> Bitte die gewünschten Kleidungsstücke auswählen und auf "zum Warenkorb" klicken
+   </div>
+   
+   <form method="POST" action="{{url_for('.warenkorb')}}">
        <div class="row"> <!-- Bootstrap: Ausgabe in Zeilen -->
         {% for key, value in articles.iterrows() %} <!-- Schleife durch articles (Zeilen, die durchlaufen werden sollen)) -->
         <div class="col-md-4"> <!-- Festlegung der Spaltenbreite. md-12 = gesamte Breite -->
@@ -25,12 +32,13 @@
         </div>
         {% endfor %}  
        </div>
+
        
+      <input type="submit" value="Zum Warenkorb"/>
+
    </form>
 
-   <div class ="Titel"> Falls die ausgewählten Kleidunsstücke nicht richtig sind, klicke auf "Neue Auswahl" 
-        <input type="button" onclick="location.href='{{url_for('.kleidungsabfrage')}}';"value="Neue Auswahl"/>
-   </div>
+  
 </body>
 
 </html>
