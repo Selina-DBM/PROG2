@@ -95,10 +95,16 @@
   transform: rotate(45deg);
 }
 
-.Titel_add {
+.titel_add {
     font-size: 20pt;
-    margin-top: 1000px;
-    margin-left: ; font-family: 'Spartan';
-    width: 300pt;
+    margin-top: 10px;
+    margin-left: 100px;
+    font-family: 'Spartan';
+    font-size: 20px;
+    width: 1000pt;
     text-align: center;
 }
+.Box {
+  margin-left: 50%;
+}
+

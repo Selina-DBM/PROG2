@@ -1,0 +1,80 @@
+<html>
+
+<title>Add to Cart</title>
+<link rel="stylesheet" href="../static/main.css" type="text/css" /> <!-- Verweis auf CSS-Datei, href: wo liegt es?-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+</head>
+
+
+</head>
+
+
+<body >
+
+    <div class="bestaetigung">
+        Möchtest du diese Artikel jetzt kaufen?<br>
+
+            <input type="button" onclick="location.href='{{url_for('.verabschiedung')}}';" value="Ja" /> <!-- Hier noch den Link einfügen -->
+            <input type="button" onclick="location.href='{{url_for('.kleidungsabfrage')}}';" value="Nein" />
+    </div>
+
+</body>
+
+</html>
+
+
+<div class= "text">
+        Bitte trage deine Adresse und E-Mail Adresse ein:
+    </div>
+        <br>
+
+    <div class="Volleadresse">
+        <form>
+            <label>E-Mail: 
+                <br>
+                <input type="email" name="email" size="50">
+            </label>
+        </form>
+                
+        <form method="POST">
+            <label>Name und Vorname
+                <br>
+                <input type="text" name="name_vorname" size="50">
+            </label>
+        </form>
+
+        <form method="POST">
+            <label>Strasse und Hausnummer
+                <br>
+                <input type="text" name="adresse" size="50">
+            </label>
+        </form>
+
+        <form method="POST">
+            <label>Wohnort und PLZ
+                <br>
+                <input type="text" name="wohnort" size="50">
+            </label>
+        </form>
+
+        <form method="POST">
+            <label>Schweiz
+                <input type="checkbox" name="schweiz" size="50">
+            </label>
+            <label>Deutschland
+                <input type="checkbox" name="deutschland" size="50">
+            </label>
+            <label>Österreich
+                <input type="checkbox" name="deutschland" size="50">
+            </label>
+            <br><br>
+            
+       <div class="Box">
+        <input type="submit" onclick="location.href='{{url_for('.bezahlseite')}}';" value="Weiter"/>
+ 
+      </div>
+
+        </form>
+    </div>
+    

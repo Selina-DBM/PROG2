@@ -18,15 +18,13 @@
 
 
 <body>
+<div class="container_abfrage">
     <div class="Kleiderabfrage">
         Hallo {{vorname}} <br>
         Für welche Artikel
         interessierst du dich?<br>
     </div>
     <br><br>
-
-
-<div class="Tabelle">
         <form method="POST" action="{{url_for('.add')}}">
 <table border="1"> <!-- Code sauber formatieren für Prof -->
   <tr> <!--deinfes row /neue Zeile-->
@@ -44,9 +42,9 @@
     <tr>
     <td>S</td>
     <td><form method="POST">
-            <input type="checkbox" name="artikel_filter" value="hosen_s" size="50"></td> <!-- Name muss eineindeutig sein Hosen S-->
+            <input type="checkbox" name="artikel_filter" value="hosen_s" size="50"></td> 
     <td><form method="POST">
-            <input type="checkbox" name="artikel_filter" value="jacken_s" size="50"></td><!-- Jacken S- usw. -->
+            <input type="checkbox" name="artikel_filter" value="jacken_s" size="50"></td>
     <td><form method="POST">
             <input type="checkbox" name="artikel_filter" value="tshirts_s" size="50"></td>
   </tr>
@@ -68,10 +66,11 @@
     <td><form method="POST">
             <input type="checkbox" name="artikel_filter" value="tshirts_l" size="50"></td>
   </tr>
-  
-</table>
-    <input type="submit" value="Artikel filtern" />
         </form>
+</table>
+<br>
+    
+<input type="submit" value="Artikel filtern" />
 </div>
        
     

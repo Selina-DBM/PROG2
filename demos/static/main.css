@@ -1,22 +1,18 @@
 
 .Begruessungstext {
     margin-top: 20%;
-    margin-left: 35%;
     font-size: 20pt;
     font-family: 'Spartan';
+    text-align: center;
 }
 .Kleiderabfrage {
     font-size: 20pt;
     margin-top: 2%;
-    margin-left: 35%;
     font-family: 'Spartan';
     width: 300pt;
     text-align: center;
 }
-.Tabelle {
-    font-family: 'Spartan';
-    margin-left: 40%;
-}
+
 .Abfrageeins {
     margin-top: 20pt;
     margin-left: 35%;
@@ -62,4 +58,44 @@
 .bestaetigung {
     margin-left: 43%;
     width: 200px;
+    font-family: 'Spartan';
+}
+.Box {
+  margin-left: 10%;
+}
+
+.filterung {
+    margin-left: 9%;
+}
+
+.container_abfrage{
+  margin-left: 2%;
+  font-family: 'Spartan';
+}
+
+input {
+  width: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+table {
+    font-family: 'Spartan';
+    border-collapse: collapse;
+}
+
+table, tr, td {
+    border: 2px solid grey;
+    padding: 5px;
+}
+.card_warenkorb {
+  border: 1px solid black;
+  max-width: 150px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: arial;
+  font-size: 18px;
 }
