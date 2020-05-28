@@ -8,6 +8,7 @@
 .Kleiderabfrage {
     font-size: 20pt;
     margin-top: 2%;
+    margin-left: -7%;
     font-family: 'Spartan';
     width: 300pt;
     text-align: center;
@@ -33,6 +34,12 @@
     font-family: 'Spartan';
     font-size: 10pt;
 }
+.zumwarenkorb{
+    margin-left: 30%;
+}
+.auswahlbestätigen{
+    margin-left: 25%;
+}
 .text {
     font-size: 20pt;
     font-family: 'Spartan';
@@ -56,12 +63,13 @@
 }
 
 .bestaetigung {
-    margin-left: 43%;
-    width: 200px;
+    margin-left: 30%;
+    width: 600px;
     font-family: 'Spartan';
+    font-size: 20pt;
 }
 .Box {
-  margin-left: 10%;
+  text-align: center;
 }
 
 .filterung {
@@ -69,14 +77,15 @@
 }
 
 .container_abfrage{
-  margin-left: 2%;
+  margin-left: 40%;
   font-family: 'Spartan';
 }
 
-input {
-  width: 100px;
+input[type=submit]{
+  width: auto;
   padding: 12px 20px;
   box-sizing: border-box;
+
 }
 
 table {
@@ -91,11 +100,130 @@ table, tr, td {
 .card_warenkorb {
   border: 1px solid black;
   max-width: 150px;
-  margin-left: 50px;
   margin-bottom: 20px;
   padding-top: 10px;
   margin-top: 20px;
   text-align: center;
   font-family: arial;
   font-size: 18px;
+}
+
+.card_add {
+  border: 1px solid black;
+  max-width: 300px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Spartan';
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 130;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.titel_add {
+    font-size: 20pt;
+    margin-top: 10px;
+    margin-left: 100px;
+    font-family: 'Spartan';
+    font-size: 20px;
+    width: 1000pt;
+    text-align: center;
+}
+.Box {
+  margin-left: -55%;
+  margin-top: 2%;
+}
+
+.addcart {
+    margin-left: 200px;
+    font-family: 'Spartan';
+}
+
+.warenkorbbox{
+    margin-left: 200px;
+    font-family: 'Spartan';
 }

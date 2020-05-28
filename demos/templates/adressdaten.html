@@ -11,24 +11,15 @@
 
 
 <body >
+   
 
-    <div class="bestaetigung">
-        Möchtest du diese Artikel jetzt kaufen?<br>
-
-            <input type="button" onclick="location.href='{{url_for('.verabschiedung')}}';" value="Ja" /> <!-- Hier noch den Link einfügen -->
-            <input type="button" onclick="location.href='{{url_for('.kleidungsabfrage')}}';" value="Nein" />
-    </div>
-
-</body>
-
-</html>
 
 
 <div class= "text">
         Bitte trage deine Adresse und E-Mail Adresse ein:
     </div>
         <br>
-
+<form method="POST" action="{{url_for('.bezahlseite')}}">
     <div class="Volleadresse">
         <form>
             <label>E-Mail: 
@@ -58,23 +49,19 @@
             </label>
         </form>
 
-        <form method="POST">
-            <label>Schweiz
-                <input type="checkbox" name="schweiz" size="50">
-            </label>
-            <label>Deutschland
-                <input type="checkbox" name="deutschland" size="50">
-            </label>
-            <label>Österreich
-                <input type="checkbox" name="deutschland" size="50">
-            </label>
-            <br><br>
-            
+        <label for="cars"> Wähle bitte dein Land aus: </label>
+        <select id="countries" name="länder">
+            <option value="Schweiz">Schweiz</option>
+            <option value="Schweiz">Deutschland</option>
+            <option value="Schweiz">Österreich</option>
+        </select>
        <div class="Box">
-        <input type="submit" onclick="location.href='{{url_for('.bezahlseite')}}';" value="Weiter"/>
- 
+        <input type="submit" onclick="location.href='{{url_for('.bezahlseite')}}';" value="Bezahlen"/>
+        <input type="submit" onclick="location.href='{{url_for('.kleidungsabfrage')}}';" value="Abbrechen"/>
       </div>
-
-        </form>
     </div>
-    
+</form>
+
+</body>
+
+</html>

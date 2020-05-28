@@ -8,6 +8,7 @@ DATENBANK = pd.read_csv ('Datenbank.csv')
 app = Flask("Onlineshop")
 vorname=""
 sum_prices =""
+applied_filters =[]
 
 @app.route("/", methods=['GET', 'POST'])
 def hallo():
@@ -27,21 +28,22 @@ def kleidungsabfrage():
 
 
 
-@app.route('/add/', methods=['GET', 'POST'])
-def add():
+@app.route('/add_to_cart/', methods=['GET', 'POST'])
+def add_to_cart():
+    global applied_filters
     if request.method == 'POST':
         applied_filters = request.form.getlist('artikel_filter')
-        print (applied_filters)
-        filtered_articles = DATENBANK[DATENBANK.filter_values.isin(applied_filters)]
-        return render_template("add.html", articles=filtered_articles)
+    filtered_articles = DATENBANK[DATENBANK.filter_values.isin(applied_filters)]
+    return render_template("add_to_cart.html", articles=filtered_articles,)
 
 @app.route('/warenkorb/', methods=['GET', 'POST'])
 def warenkorb():
     article_selection = request.form.getlist('warenkorb')
+    Anzahl =len(article_selection)
     selected_articles = DATENBANK[DATENBANK.artikelnummer.isin(article_selection)]
     global sum_prices
     sum_prices = selected_articles ['preis'].sum()
-    return render_template("warenkorb.html", articles=selected_articles)
+    return render_template("warenkorb.html", articles=selected_articles, sum=sum_prices, Anzahl_Art=Anzahl)
 
 @app.route('/adressdaten', methods=['GET', 'POST'])
 def adressdaten():

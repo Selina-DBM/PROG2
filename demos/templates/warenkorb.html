@@ -4,12 +4,11 @@
     <title>Warenkorb</title>
     <meta charset="utf-8">
     <meta name="author" content="Selina Marty">
-    <meta name="description" content="Begrüssungs-Seite">
     <meta name="keywords" content="Homepage, HTML, WWW, WINF, IW">
-    <meta name="date" content="01.11.2018">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="browser" conent="Chrome">
     <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Browser: Google Chrome -->
 
     <link rel="stylesheet" href="../static/main.css" type="text/css" />
@@ -21,22 +20,27 @@
     <div class="bestaetigung">
         Möchtest du diese Artikel jetzt kaufen?<br>
     </div>
-
-	<form method="POST" action="{{url_for('.adressdaten')}}">
+<div class="warenkorbbox">
+	
 		<div class="row">
 			{% for key, value in articles.iterrows() %}
 			<div class="col-md-12"/>
 			<div class="card_warenkorb">
-				<img src="../static/{{value['bilder']}}" style="width: 20%" />
-				<p id="{{value['artikelnummer'] }}">{{value['artikel']}} {{value['groesse'] }} </p>
+				<img src="../static/{{value['bilder']}}" style="width: 60%" />
+				<p id="{{value['artikelnummer'] }}">{{value['artikel']}} {{value['groesse']}}</p>
 				<p class="price" id="{{value['artikelnummer'] }}"> {{value ['preis']}} CHF </p>
 			</div>
 
 		</div>
 		{% endfor %}
-
-	<input type="submit" value="Auswahl bestätigen und zur Bezahlseite" />
-</form>
+    <p> Summe ({{Anzahl_Art}} Artikel): {{sum}} CHF</p>
+   
+<br>
+    
+</div>
+    <div class="auswahlbestätigen">
+        <input type="button" onclick="location.href='{{url_for('.adressdaten')}}';"value="Auswahl bestätigen und zur Bezahlseite gehen"/>
+    </div>
 </body>
 
 </html>

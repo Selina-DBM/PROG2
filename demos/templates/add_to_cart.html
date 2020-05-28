@@ -1,6 +1,6 @@
 <head>
 <title>Add to Cart</title>
-<link rel="stylesheet" href="../static/Kleidunganzeigen.css" type="text/css" /> <!-- Verweis auf CSS-Datei, href: wo liegt es?-->
+<link rel="stylesheet" href="../static/main.css" type="text/css" /> <!-- Verweis auf CSS-Datei, href: wo liegt es?-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
 </head>
@@ -16,14 +16,14 @@
    
    <div class ="titel_add"> Bitte die gewünschten Kleidungsstücke auswählen und auf "zum Warenkorb" klicken
    </div>
-   
+  <div class="addcart">
    <form method="POST" action="{{url_for('.warenkorb')}}">
        <div class="row"> <!-- Bootstrap: Ausgabe in Zeilen -->
         {% for key, value in articles.iterrows() %} <!-- Schleife durch articles (Zeilen, die durchlaufen werden sollen)) -->
         <div class="col-md-4"> <!-- Festlegung der Spaltenbreite. md-12 = gesamte Breite -->
             <div class ="card_add">
                 <img src="../static/{{value['bilder']}}" style="width:100%"/>
-                <p id="{{ value['artikelnummer'] }}">{{ value['artikel'] }} {{ value['groesse'] }}</p> <!-- 2 x }} vergessen -->
+                <p id="{{ value['artikelnummer'] }}"> {{ value['artikel'] }} {{ value['groesse'] }}</p> <!-- 2 x }} vergessen -->
                 <p class="price" id="{{ value['artikelnummer'] }}">{{value['preis'] }} CHF </p>
 
                 <label class="container">
@@ -35,11 +35,11 @@
         {% endfor %}  
        </div>
 
-      <div class="Box">
+      <div class="zumwarenkorb">
         <input type="submit" value="Zum Warenkorb"/>
       </div>
    </form>
-
+  </div>
   
 </body>
 
