@@ -18,18 +18,19 @@
 <body>
 <div class="container_abfrage">
     <div class="Kleiderabfrage">
+        <!--Begrüssung mit Refernz auf den eingegeben Namen-->
         Hallo {{vorname}} <br>
         Für welche Artikel
         interessierst du dich?<br>
     </div>
     <br><br>
         <form method="POST" action="{{url_for('.add_to_cart')}}">
-<table border="1"> <!-- Code sauber formatieren für Prof -->
+<table border="1"> 
   <tr> <!--deinfes row /neue Zeile-->
-    <td> <!--defines cell -->
+    <td> <!--definiert Zelle -->
        
     </td>
-    <td> <!-- <th> besser für Überschriften  (https://www.w3schools.com/TAGS/tag_table.asp) -->
+    <td>
        Hosen
     </td>
     <td>
@@ -39,6 +40,7 @@
   </tr>
     <tr>
     <td>S</td>
+    <!--Tabelle mit allen Checbocen, name der Checbox einheitlich und Value unterschiedlich. Value muss unterschiedlich sein, damit es aus der Datenbank die Daten richtig ziehen kann -->
     <td><form method="POST">
             <input type="checkbox" name="artikel_filter" value="hosen_s" size="50"></td> 
     <td><form method="POST">

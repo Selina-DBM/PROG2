@@ -1,0 +1,62 @@
+<html>
+
+<title>Add to Cart</title>
+<link rel="stylesheet" href="../static/main.css" type="text/css" />  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+</head>
+ 
+
+
+
+<body >
+<form method="POST" action="{{url_for('.verabschiedung')}}">
+	<div class="bezahlen">
+		 <br>
+		<div class ="titel_add"> Bitte kontrolliere hier deine Adresse und wähle die Zahlungsart aus.
+			<br>
+			Falls die Adresse nicht richtig ist, dann klicke hier:   
+       		<input type="button" onclick="location.href='{{url_for('.adressdaten')}}';"value="Adresse ändern"/>
+  		</div>
+	</div>
+	<div class="kosten"><br>
+		<div class="header">
+			Die Bestellung kostet: 
+		</div>
+	 <br>
+		Summe deiner Artikel: {{sum}} CHF
+		<br>
+		<u>
+		Versandkosten: {{Porto}} CHF
+		</u>
+		<br>
+		<div class="gesamtkosten">
+			Gesamtkosten: {{Gesamtkosten}} CHF
+		</div>
+		<br>
+		<br>
+		<div class="header">
+			Deine Adresse:
+		</div>
+		<br>	
+		{{name_vorname}}<br>
+		{{strasse}}<br>
+		{{wohnort}}
+		<br>
+		
+		<div class="Zahlungsart">
+			<label for="Zahlungsart"> Wähle bitte deine gewünschte Zahlungsart aus: </label>
+
+        	<select id="countries" name="zahlungsart">
+         	   <option value="Rechnung">Rechnung</option>
+          	  <option value="KreditKarte">Kredit Karte</option>
+          	  <option value="PayPal">Pay Pal</option>
+        	</select>
+        </div>
+        <div class="Box">
+        	<input type ="submit" value="Bestellung senden" /> 
+       	</div>
+	</div>
+</form>
+</body>
+

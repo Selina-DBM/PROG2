@@ -44,8 +44,8 @@
     font-size: 20pt;
     font-family: 'Spartan';
     margin-top: 20pt;
-    margin-left: 35%;
-    width: 300pt;
+    margin-left: 28%;
+    width: 500pt;
     text-align: center;
 }
 .entscheidung {
@@ -61,7 +61,36 @@
     border-style: solid;
     font-family: 'Spartan';
 }
-
+.bezahlen{
+    font-family: 'Spartan';
+    margin-top: 20pt;
+    text-align: center;
+    
+}
+.summe{
+  font-family: 'Spartan';
+  font-size:  20pt;
+}
+.gesamtkosten {
+    font-family: 'Spartan';
+    font-weight: bolder;
+    border-bottom: double #000000;
+    margin-left:;
+    width: 220px;
+}
+.header{
+  font-size: 15pt;
+  font-weight: bolder;
+}
+.kosten {
+  margin-left: 40%;
+  font-family: 'Spartan';
+}
+.Zahlungsart{
+  font-family: 'Spartan';
+  text-align: left;
+  margin-left: -100pt;
+}
 .bestaetigung {
     margin-left: 30%;
     width: 600px;
@@ -83,11 +112,18 @@
 
 input[type=submit]{
   width: auto;
+  font-size: 10pt;
   padding: 12px 20px;
   box-sizing: border-box;
 
 }
+input[type=button]{
+  width: auto;
+  font-size: 10pt;
+  padding: 12px 20px;
+  box-sizing: border-box;
 
+}
 table {
     font-family: 'Spartan';
     border-collapse: collapse;

@@ -1,7 +1,7 @@
 <html>
 
 <title>Add to Cart</title>
-<link rel="stylesheet" href="../static/main.css" type="text/css" /> <!-- Verweis auf CSS-Datei, href: wo liegt es?-->
+<link rel="stylesheet" href="../static/main.css" type="text/css" />  <!--Verweis auf CSS-Datei, href: wo liegt es? -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
 </head>
@@ -19,49 +19,61 @@
         Bitte trage deine Adresse und E-Mail Adresse ein:
     </div>
         <br>
-<form method="POST" action="{{url_for('.bezahlseite')}}">
+    <form method="POST" action="{{url_for('.bezahlseite')}}">
+
     <div class="Volleadresse">
-        <form>
+
             <label>E-Mail: 
                 <br>
                 <input type="email" name="email" size="50">
             </label>
-        </form>
-                
-        <form method="POST">
+    
+            <br>
+        
             <label>Name und Vorname
                 <br>
                 <input type="text" name="name_vorname" size="50">
             </label>
-        </form>
 
-        <form method="POST">
+            <br>
+           
             <label>Strasse und Hausnummer
                 <br>
                 <input type="text" name="adresse" size="50">
             </label>
-        </form>
+            <br>
 
-        <form method="POST">
             <label>Wohnort und PLZ
                 <br>
                 <input type="text" name="wohnort" size="50">
             </label>
-        </form>
+            <br>
 
-        <label for="cars"> Wähle bitte dein Land aus: </label>
+        <label for="countries"> Wähle bitte dein Land aus: </label>
+
         <select id="countries" name="länder">
             <option value="Schweiz">Schweiz</option>
-            <option value="Schweiz">Deutschland</option>
-            <option value="Schweiz">Österreich</option>
+            <option value="Deutschland">Deutschland</option>
+            <option value="Österreich">Österreich</option>
         </select>
+
        <div class="Box">
-        <input type="submit" onclick="location.href='{{url_for('.bezahlseite')}}';" value="Bezahlen"/>
-        <input type="submit" onclick="location.href='{{url_for('.kleidungsabfrage')}}';" value="Abbrechen"/>
+        <input type ="submit" value="Bezahlen" /> 
+        
       </div>
+      
+
     </div>
-</form>
+    </form>
+
+  <!--   <div class="Box">
+    <input type="submit" onclick="location.href='{{url_for('.kleidungsabfrage')}}';" value="Abbrechen"/>
+    </div> -->
+    <!-- <form method = "POST">
+            <input type="submit" onclick="location.href='{{url_for('.bezahlseite')}}';" value="Bezahlen"/>
+            <input type="submit" onclick="location.href='{{url_for('.kleidungsabfrage')}}';" value="Abbrechen"/> -->
+
 
 </body>
 
-</html>
+</html> 
