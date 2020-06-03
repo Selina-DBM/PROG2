@@ -45,7 +45,7 @@
     font-family: 'Spartan';
     margin-top: 20pt;
     margin-left: 28%;
-    width: 500pt;
+    width: 550pt;
     text-align: center;
 }
 .entscheidung {
@@ -61,6 +61,7 @@
     border-style: solid;
     font-family: 'Spartan';
 }
+
 .bezahlen{
     font-family: 'Spartan';
     margin-top: 20pt;
@@ -69,8 +70,9 @@
 }
 .summe{
   font-family: 'Spartan';
-  font-size:  20pt;
+  font-size:  15pt;
 }
+
 .gesamtkosten {
     font-family: 'Spartan';
     font-weight: bolder;
