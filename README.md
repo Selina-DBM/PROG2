@@ -2,6 +2,8 @@
 ## Ausgangslage
 Ich wollte einen Onlineshop entwickeln. Für diesen habe ich mich entschieden einen einfachen Aufbau zu wählen. Der Kunde wir mit seinem Namen begrüsst und anschliessend wird er durch die Seite durchgeführt und kann sich seine Kleidungsstücke aussuchen. Er wird nach Adresse etc. gefragt und kann nach Berechnung der Versandkosten seiner Bestellung abschliessen und die Artikel kaufen. 
 
+## Flussdiagram
+(/Flussdiagram.png)
 ## Funktionen
 - Name eingeben
 - Artikel filtern
