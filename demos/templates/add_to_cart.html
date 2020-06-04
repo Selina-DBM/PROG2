@@ -24,18 +24,18 @@
             <div class ="card_add">
                 <img src="../static/{{value['bilder']}}" style="width:100%"/>
                 <p id="{{ value['artikelnummer'] }}"> {{ value['artikel'] }} {{ value['groesse'] }}</p> <!-- ??? -->
-                <p class="price" id="{{ value['artikelnummer'] }}">{{value['preis'] }} CHF </p>
+                <p class="price" id="{{ value['artikelnummer'] }}">{{value['preis'] }} CHF </p><!-- ??? -->
 
                 <label class="container">
-                  <input type="checkbox" name="warenkorb" value="{{ value['artikelnummer'] }}" >
+                  <input type="checkbox" name="warenkorb" value="{{ value['artikelnummer'] }}" > <!--??-->
                   <span class="checkmark"></span>
               </label>
             </div>
         </div>
-        {% endfor %}  
+        {% endfor %}  <!-- ??? -->
        </div>
 
-      <div class="zumwarenkorb">
+      <div class="zumwarenkorb"> 
         <input type="submit" value="Zum Warenkorb"/>
       </div>
    </form>
