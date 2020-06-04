@@ -24,15 +24,15 @@
 	
 		<div class="row"><!-- Bootstrap: Ausgabe in Zeilen -->
 			{% for key, value in articles.iterrows() %}<!-- Schleife durch articles (Zeilen, die durchlaufen werden sollen)) ?????-->
-			<div class="col-md-12"/> <!-- Festlegung der Spaltenbreite. md-4 = ???? -->
+			<div class="col-md-12"/> <!-- Festlegung der Spaltenbreite md-12 = gesamte Breite-->
 			<div class="card_warenkorb">
 				<img src="../static/{{value['bilder']}}" style="width: 60%" />
-				<p id="{{value['artikelnummer'] }}">{{value['artikel']}} {{value['groesse']}}</p>
-				<p class="price" id="{{value['artikelnummer'] }}"> {{value ['preis']}} CHF </p>
+				<p id="{{value['artikelnummer'] }}">{{value['artikel']}} {{value['groesse']}}</p><!--??-->
+				<p class="price" id="{{value['artikelnummer'] }}"> {{value ['preis']}} CHF </p><!--??-->
 			</div>
 
 		</div>
-		{% endfor %}
+		{% endfor %}<!--Schleifenende??-->
     <div class="summe">
         <p><b>Summe ({{Anzahl_Art}} Artikel): {{sum}} CHF</b></p> <!--Um die Gesamtkosten exkl. Versandkosten und die Anzahl Artikel anzuzeigen-->
    </div>

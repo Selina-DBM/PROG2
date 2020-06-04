@@ -20,7 +20,7 @@
    <form method="POST" action="{{url_for('.warenkorb')}}">
        <div class="row"> <!-- Bootstrap: Ausgabe in Zeilen -->
         {% for key, value in articles.iterrows() %} <!-- Schleife durch articles (Zeilen, die durchlaufen werden sollen)) -->
-        <div class="col-md-4"> <!-- Festlegung der Spaltenbreite. md-12 = gesamte Breite -->
+        <div class="col-md-4"> <!-- Festlegung der Spaltenbreite. md-4=??? -->
             <div class ="card_add">
                 <img src="../static/{{value['bilder']}}" style="width:100%"/>
                 <p id="{{ value['artikelnummer'] }}"> {{ value['artikel'] }} {{ value['groesse'] }}</p> <!-- ??? -->
