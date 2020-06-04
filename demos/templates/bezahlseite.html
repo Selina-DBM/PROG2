@@ -10,7 +10,7 @@
 
 
 <body >
-<form method="POST" action="{{url_for('.verabschiedung')}}">
+<form method="POST" action="{{url_for('.verabschiedung')}}"><!--Link um alle Variabeln direkt an die definierte Seite weiterzugeben-->
 	<div class="bezahlen">
 		 <br>
 		<div class ="titel_add"> Bitte kontrolliere hier deine Adresse und wähle die Zahlungsart aus.
@@ -20,7 +20,7 @@
   		</div>
 	</div>
 	<div class="kosten"><br>
-		<div class="header">
+		<div class="header"><!--Einbringung aller Variabeln der Kosten und der Adresse-->
 			Die Bestellung kostet: 
 		</div>
 	 <br>
@@ -45,10 +45,10 @@
 		<br>
 		
 		<div class="Zahlungsart">
-			<label for="Zahlungsart"> Wähle bitte deine gewünschte Zahlungsart aus: </label>
+			<label for="Zahlungsart"> Wähle bitte deine gewünschte Zahlungsart aus: </label> <!--Dropdown Liste um zu garantieren, dass nur eine ausgewählt wird. Zusätzlich sind sie als einzelne Value gespeichert, damit man sie allenfalls weiter benutzen möchte-->
 
-        	<select id="countries" name="zahlungsart">
-         	   <option value="Rechnung">Rechnung</option>
+        	<select id="zahlungsart" name="zahlungsart">
+         	  <option value="Rechnung">Rechnung</option>
           	  <option value="KreditKarte">Kredit Karte</option>
           	  <option value="PayPal">Pay Pal</option>
         	</select>

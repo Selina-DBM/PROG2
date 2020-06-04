@@ -7,19 +7,14 @@
 </head>
 
 
-</head>
-
 
 <body >
    
-
-
-
 <div class= "text">
         Bitte trage deine Adresse und E-Mail Adresse ein:
-    </div>
+</div>
         <br>
-    <form method="POST" action="{{url_for('.bezahlseite')}}">
+<form method="POST" action="{{url_for('.bezahlseite')}}"> <!--Link um alle Variabeln direkt an die definierte Seite weiterzugeben-->
 
     <div class="Volleadresse">
 
@@ -64,15 +59,7 @@
       
 
     </div>
-    </form>
-
-  <!--   <div class="Box">
-    <input type="submit" onclick="location.href='{{url_for('.kleidungsabfrage')}}';" value="Abbrechen"/>
-    </div> -->
-    <!-- <form method = "POST">
-            <input type="submit" onclick="location.href='{{url_for('.bezahlseite')}}';" value="Bezahlen"/>
-            <input type="submit" onclick="location.href='{{url_for('.kleidungsabfrage')}}';" value="Abbrechen"/> -->
-
+</form>
 
 </body>
 

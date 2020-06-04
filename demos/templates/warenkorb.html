@@ -22,9 +22,9 @@
     </div>
 <div class="warenkorbbox">
 	
-		<div class="row">
-			{% for key, value in articles.iterrows() %}
-			<div class="col-md-12"/>
+		<div class="row"><!-- Bootstrap: Ausgabe in Zeilen -->
+			{% for key, value in articles.iterrows() %}<!-- Schleife durch articles (Zeilen, die durchlaufen werden sollen)) ?????-->
+			<div class="col-md-12"/> <!-- Festlegung der Spaltenbreite. md-4 = ???? -->
 			<div class="card_warenkorb">
 				<img src="../static/{{value['bilder']}}" style="width: 60%" />
 				<p id="{{value['artikelnummer'] }}">{{value['artikel']}} {{value['groesse']}}</p>
@@ -34,7 +34,7 @@
 		</div>
 		{% endfor %}
     <div class="summe">
-        <p><b>Summe ({{Anzahl_Art}} Artikel): {{sum}} CHF</b></p>
+        <p><b>Summe ({{Anzahl_Art}} Artikel): {{sum}} CHF</b></p> <!--Um die Gesamtkosten exkl. Versandkosten und die Anzahl Artikel anzuzeigen-->
    </div>
 <br>
     
