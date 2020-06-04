@@ -13,32 +13,37 @@ Ich wollte einen Onlineshop entwickeln. Für diesen habe ich mich entschieden ei
 - Gesamtkosten inkl. Länder-abhängigen Versandkosten anschauen
 
 ## Begrüssungsseite
-(./Begrüssungsseite.png)
+
 Die erste Seite ist sehr simpel gehalten. Der Benutzer wird begrüsst und nach seinem Namen gefragt. 
-Diese Seite soll als Einstieg genutzt werden und dafür da sein, dass der Benutzer in den nächsten Schritten immer mit dem Namen angesprochen werden kann.  
+Diese Seite soll als Einstieg genutzt werden und dafür da sein, dass der Benutzer in den nächsten Schritten immer mit dem Namen angesprochen werden kann. 
+![Begrüssungsseite](/Bilder/Begrüssungsseite.png)
 
 ## Kleidungsabfrage-Seite
 Die zweite Seite in meinem Onlineshop ist die Abfrage, welche Kleidungsstücke für einen interessant sind. Dafür habe ich eine Tabelle erstellt, in der es Checkboxen gibt. Diese Boxen decken immer eine Konstellation zwischen Kleidungsstück und Grösse ab. Die Tabelle ist grundsätzlich die einfachste Möglichkeit eine solche Abfrage zu machen. 
 Anschliessend kann der Benutzer weiter gehen mit seiner getroffenen Auswahl. 
+![Kleidungsabfrage](/Bilder/Kleidungsabfrage.png)
 
 ## Add_to_cart-Seite
 Die nächste Seite startet ganz oben mit einem Text und einem Abbrechen Button. Dieser ist dafür da, falls die gezeigten Kleidungsstücke nicht mit dem gewünschten Ergebnis übereinstimmen, eine Neue Auswahl zu treffen. 
 
 Anschliessend werden die Kleidungsstücke angezeigt, für die vorher das Häckchen angewählt wurde. Zusätzlich zu den Bildern der Kleidungsstücke werden auch Preis und Grösse angezeigt. Dies hilft dem Kunden zur Übersicht und ist natürlich auch relevant für die schlussendliche Kaufentscheidung. 
 Jedes Kleidungsstück kann anschliessend einzeln angewählt werden, da der Kunde dann doch vielleicht nur eine Hose möchte, anstatt Hose und Jacke. 
+![Add_to_cart](/Bilder/Add_to_cart.png)
 
 ## Warenkorb Seite
 Diese Seite ist der Warenkorb. Wie bei vielen Onlineshops werden hier alle ausgewählten Kleidungsstücke erneut angezeigt. Zusätzlich werden die Anzahl Artikel angezeigt und der Gesamtpreis ohne Versandkosten.
 Falls diese Auswahl dem entspricht, was man bestellen möchte, kann man nun die Auswahl bestätigen. 
-
+![Warenkorb](/Bilder/Warenkorb.png)
 ## Adressdaten
 Die Seite Adressdaten fragt dann ab welche Adresse man für die Lieferung haben möchte. Zusätzlich wird auch das Land abgefragt, dieses ist dann wiederum relevant für die Berechnung der Versandkosten. Die Länderauswahl ist nicht mit Checkboxen sondern mit einer Art Dropdown Auswahl gespeichert. Dadurch kann der Benutzer nur ein Land auswählen und nicht ausversehen mehrere. 
 Auch hier gibt es wieder die Möglichkeit über einen Submit-Input Button dann weiterzugehen oder abzubrechen. 
+![Adressdaten](/Bilder/Adressdaten.png)
 
 ## Bezahlseite
 Auf der Bezahlseite werden die Gesamtkosten inkl. der Länderabhängigen Versandkosten angezeigt. Zusätzlich wird noch einmal die Adresse angezeigt, als Hilfe zur Übersicht. Abschliessend ist auch noch eine Auswahl zwischen Rechnung, Kredit Karte  und PayPal vorhanden, dort kann man auswählen, welche Zahlungsart man möchte. 
+![Bezahlseite](/Bilder/Bezahlseite.png)
 
 ## Verabschiedung
 Hier wird der Kunde noch einmal verabschiedet. 
- 
+![Verabschiedung](/Bilder/Verabschiedung.png)
 
