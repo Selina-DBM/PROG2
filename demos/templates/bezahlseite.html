@@ -10,13 +10,13 @@
 
 
 <body >
-<form method="POST" action="{{url_for('.verabschiedung')}}"><!--Link um alle Variabeln direkt an die definierte Seite weiterzugeben-->
+<form method="POST" action="{{url_for('.verabschiedung')}}"><!--Mit dem Klick auf den Submit Button wird die URL der Funktion "verabschiedung" aufgerufen und die auf dieser Seite eingegeben Daten sind in der Funktion "verabschiedung" auslesbar  -->
 	<div class="bezahlen">
 		 <br>
 		<div class ="titel_add"> Bitte kontrolliere hier deine Adresse und wähle die Zahlungsart aus.
 			<br>
 			Falls die Adresse nicht richtig ist, dann klicke hier:   
-       		<input type="button" onclick="location.href='{{url_for('.adressdaten')}}';"value="Adresse ändern"/>
+       		<input type="button" onclick="location.href='{{url_for('.adressdaten')}}';"value="Adresse ändern"/> <!--Mit dem Klick auf den Button "Adresse ändern" wird die URL der Funktion "adressdaten" aufgerufen-->
   		</div>
 	</div>
 	<div class="kosten"><br>
@@ -50,7 +50,7 @@
         	<select id="zahlungsart" name="zahlungsart">
          	  <option value="Rechnung">Rechnung</option>
           	  <option value="KreditKarte">Kredit Karte</option>
-          	  <option value="PayPal">Pay Pal</option>
+          	  <option value="PayPal">PayPal</option>
         	</select>
         </div>
         <div class="Box">

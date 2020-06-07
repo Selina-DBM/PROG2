@@ -10,29 +10,29 @@
 
 <body>
    <div class ="titel_add"> Falls die ausgewählten Kleidunsstücke nicht richtig sind, klicke hier:  
-        <input type="button" onclick="location.href='{{url_for('.kleidungsabfrage')}}';"value="Neue Auswahl"/>
-   </div>
+        <input type="button" onclick="location.href='{{url_for('.kleidungsabfrage')}}';"value="Neue Auswahl"/> <!--Mit dem Klick auf den Button "Neue Auswahl" wird die URL der Funktion "klediungsabfrage" aufgerufen-->
+   </div> 
    <br>
    
    <div class ="titel_add"> Bitte die gewünschten Kleidungsstücke auswählen und auf "zum Warenkorb" klicken
    </div>
   <div class="addcart">
-   <form method="POST" action="{{url_for('.warenkorb')}}">
-       <div class="row"> <!-- Bootstrap: Ausgabe in Zeilen -->
-        {% for key, value in articles.iterrows() %} <!-- Schleife durch articles (Zeilen, die durchlaufen werden sollen)) -->
-        <div class="col-md-4"> <!-- Festlegung der Spaltenbreite. md-4=??? -->
+   <form method="POST" action="{{url_for('.warenkorb')}}"> <!--Mit dem Klick auf den Submit Button wird die URL der Funktion "warenkorb" aufgerufen und die auf dieser Seite eingegeben Daten sind in der Funktion "warenkorb" auslesbar  -->
+       <div class="row"> 
+        {% for key, value in articles.iterrows() %} <!-- Schleife die die Zeilen der ausgwählten Artikel durchläuft -->
+        <div class="col-md-4"> <!-- Festlegung der Spaltenbreite. md-4=Seite wird in drei Teile aufgeteilt (komplette Breite 12) -->
             <div class ="card_add">
-                <img src="../static/{{value['bilder']}}" style="width:100%"/>
-                <p id="{{ value['artikelnummer'] }}"> {{ value['artikel'] }} {{ value['groesse'] }}</p> <!-- ??? -->
-                <p class="price" id="{{ value['artikelnummer'] }}">{{value['preis'] }} CHF </p><!-- ??? -->
+                <img src="../static/{{value['bilder']}}" style="width:100%"/> <!--Bild der entsprechend ausgewählten Zeile wird ausgegeben-->
+                <p> {{ value['artikel'] }} {{ value['groesse'] }}</p> <!--Artikelname und Grösse der entsprechenden Zeile werden ausgegeben -->
+                <p class="price">{{value['preis'] }} CHF </p><!-- Preis der entsprechenden Zeile wird ausgegeben -->
 
                 <label class="container">
-                  <input type="checkbox" name="warenkorb" value="{{ value['artikelnummer'] }}" > <!--??-->
+                  <input type="checkbox" name="warenkorb" value="{{ value['artikelnummer'] }}" > <!--Die Checkbox für jeden Artikel wird eindeutig mit der "artikelnummer" der jeweiligen Zeile benannt-->
                   <span class="checkmark"></span>
               </label>
             </div>
         </div>
-        {% endfor %}  <!-- ??? -->
+        {% endfor %}  <!-- Ende der Schleif. Anzahl der Schleifendurchläufe abhängig von der Anzahl Artikel -->
        </div>
 
       <div class="zumwarenkorb"> 

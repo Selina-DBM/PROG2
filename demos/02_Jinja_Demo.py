@@ -18,7 +18,7 @@ email = ""
 #Definition der gloaben Variable: Name inkl. der Übergabe der Variabeln an die nächste Seite
 @app.route("/", methods=['GET', 'POST']) #Zur Benutzung von GET und POST muss als methods beides definiert sein
 def hallo():
-    if request.method == 'POST':#Durch die POST Method wird der Name nicht in der URL eingeführt
+    if request.method == 'POST':#Durch die POST Method wird der Name nicht in der URL eingefügt
         global vorname
         vorname = request.form['vorname'] #request.form wird verwendet da es nur einen Wert gibt, den man hier einträgt
         return render_template("kleidungsabfrage.html", vorname=vorname) #Übergabe der Variabeln an die nächste Seite
@@ -27,7 +27,7 @@ def hallo():
 
 #Kleidungsabfrage:
 #Abfrage nach den gewünschten Kleidungsstücken mit den gewünschten Grössen
-#Wieso hier sehr wenig? und wieso der Name?
+#Funktion nur für den Fall, dass man auf die Seite zurückgeht
 @app.route('/kleidungsabfrage/', methods=['GET', 'POST'])#Zur Benutzung von GET und POST muss als methods beides definiert sein
 def kleidungsabfrage():
     return render_template("kleidungsabfrage.html", vorname=vorname)#Übergabe der Variabeln an die nächste Seite
@@ -91,6 +91,5 @@ def bezahlseite():
 def verabschiedung():
     return render_template("verabschiedung.html", email=email, vorname=vorname)
 
-#Brauch ich das???
-if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+
+app.run(debug=True, port=5000) #Festlegung des Port und aktivieren des Debugging
