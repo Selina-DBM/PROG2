@@ -24,7 +24,7 @@
 	
 		<div class="row">
 			{% for key, value in articles.iterrows() %} <!-- Schleife die die Zeilen der ausgwählten Artikel durchläuft -->
-			<div class="col-md-3"/> <!-- Festlegung der Spaltenbreite md-12 = gesamte Breite-->
+			<div class="col-md-12"/> <!-- Festlegung der Spaltenbreite md-12 = gesamte Breite-->
 			<div class="card_warenkorb">
 				<img src="../static/{{value['bilder']}}" style="width: 60%" />
 				<p>{{value['artikel']}} {{value['groesse']}}</p><!--Artikelname und Grösse der entsprechenden Zeile werden ausgegeben -->
@@ -33,6 +33,7 @@
 
 		</div>
 		    {% endfor %}<!-- Ende der Schleif. Anzahl der Schleifendurchläufe abhängig von der Anzahl Artikel -->
+
     <div class="summe">
         <p><b>Summe ({{Anzahl_Art}} Artikel): {{sum}} CHF</b></p> <!--Um die Gesamtkosten exkl. Versandkosten und die Anzahl Artikel anzuzeigen-->
    </div>

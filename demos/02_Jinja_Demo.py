@@ -6,10 +6,12 @@ import pandas as pd #Es ermöglicht das einlesen einer CSV Datenbank und direkte
 #Import der CSV Datenbank
 DATENBANK = pd.read_csv ('Datenbank.csv')
 
-#Definition der gloabeln Variabeln
+#Flaskobjekt wird erzeugt
 app = Flask("Onlineshop") 
+
+#Default Werte der gloabeln Variabeln werden festgelegt
 vorname=""
-sum_prices =""
+sum_prices =0 
 applied_filters =[] 
 email = ""
 
@@ -18,7 +20,7 @@ email = ""
 #Definition der gloaben Variable: Name inkl. der Übergabe der Variabeln an die nächste Seite
 @app.route("/", methods=['GET', 'POST']) #Zur Benutzung von GET und POST muss als methods beides definiert sein
 def hallo():
-    if request.method == 'POST':#Durch die POST Method wird der Name nicht in der URL eingefügt
+    if request.method == 'POST':#Prüfung, ob die POST method angewendet wird
         global vorname
         vorname = request.form['vorname'] #request.form wird verwendet da es nur einen Wert gibt, den man hier einträgt
         return render_template("kleidungsabfrage.html", vorname=vorname) #Übergabe der Variabeln an die nächste Seite
