@@ -1,6 +1,6 @@
 # Projektvorhaben Onlineshop
 ## Ausgangslage
-Ich wollte einen Onlineshop entwickeln. Für diesen habe ich mich entschieden einen einfachen Aufbau zu wählen. Der Kunde wir mit seinem Namen begrüsst und anschliessend wird er durch die Seite durchgeführt und kann sich seine Kleidungsstücke aussuchen. Er wird nach Adresse etc. gefragt und kann nach Berechnung der Versandkosten seiner Bestellung abschliessen und die Artikel kaufen. 
+Ich wollte einen Onlineshop entwickeln. Ich habe mich entschieden einen einfachen Aufbau zu wählen. Der Kunde wir mit seinem Namen begrüsst und anschliessend wird er durch die Seite durchgeführt und kann sich seine Kleidungsstücke aussuchen. Er wird nach Adresse etc. gefragt und kann nach Berechnung der Versandkosten seiner Bestellung abschliessen und die Artikel kaufen. 
 
  ## Funktionen
 - Name eingeben
